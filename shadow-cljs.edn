@@ -4,6 +4,6 @@
                 :output-dir "resources/public/js"
                 :asset-path "/js"
                 :modules {:main
-                          {:init-fn genomics-qc.core/init}}
+                          {:init-fn cljs-devcontainer.core/init}}
                 :build-hooks [(shadow.cljs.build-report/hook {:output-to "build-reports/report.html"})]
                 :release {:compiler-options {:optimizations :simple}}}}}
