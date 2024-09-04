@@ -19,21 +19,6 @@
       ],
       "settings": {
         "calva.replConnectSequences": [
-          {
-            "name": "custom",
-            "projectType": "deps.edn",
-            "cljsType": "shadow-cljs",
-            "nReplPortFile": [
-              ".shadow-cljs",
-              ".nrepl-port"
-            ],
-            "menuSelections": {
-              "cljsLaunchBuilds": [
-                ":app"
-              ],
-              "cljsDefaultBuild": ":app"
-            }
-          }
         ]
       }
     }
