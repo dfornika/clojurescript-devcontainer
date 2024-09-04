@@ -29,7 +29,7 @@
             ],
             "menuSelections": {
               "cljsLaunchBuilds": [
-                ":dev"
+                ":app"
               ],
               "cljsDefaultBuild": ":app"
             }
