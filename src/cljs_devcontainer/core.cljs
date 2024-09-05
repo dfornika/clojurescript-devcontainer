@@ -3,8 +3,7 @@
   (:require [reagent.core :as r]
             [reagent.dom :as rdom]
             [cljs-http.client :as http]
-            [cljs.core.async :refer [<!]]
-            [ag-grid-react :as ag-grid]))
+            [cljs.core.async :refer [<!]]))
 
 
 (defonce db (r/atom {}))
