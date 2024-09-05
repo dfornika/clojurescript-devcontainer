@@ -6,7 +6,7 @@
             [clojure.pprint :refer [pprint]]))
 
 (def cli-arg-spec {:config {:default "shadow-cljs.edn"}
-                   :port {:default 8000}})
+                   :port {:default 9630}})
 
 (def args (cli/parse-opts *command-line-args* {:spec cli-arg-spec}))
 
@@ -22,7 +22,7 @@
 
 (def devtools-url (str "https://" codespace-name "-" port "." github-codespaces-port-forwarding-domain))
 
-(def updated-config (assoc-in original-config [:builds :app :devtools-url] devtools-url))
+(def updated-config (assoc-in original-config [:builds :app :devtools :devtools-url] devtools-url))
 
 (spit config-file (with-out-str (pprint updated-config)))
 
