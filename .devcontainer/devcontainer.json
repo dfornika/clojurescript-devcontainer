@@ -18,6 +18,7 @@
         "betterthantomorrow.calva"
       ],
       "settings": {
+        "calva.useLegacyReplWindowPath": false,
         "calva.replConnectSequences": [
         ]
       }
